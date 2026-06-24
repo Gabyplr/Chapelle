@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sennecey Patrimoine - Chapelle de l'Ermitage</title>
-    <!-- Chargement de Bootstrap 5 pour le design -->
+    <!-- Chargement de Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Fichier CSS personnalisé (à créer plus tard si besoin) -->
+    <!-- Icones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Notre fichier CSS personnalisé -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- BARRE DE NAVIGATION -->
+    <!-- BARRE DE NAVIGATION (Noir) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Sennecey Patrimoine</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -30,28 +32,98 @@
         </div>
     </nav>
 
-    <!-- SECTION PRINCIPALE (ACCUEIL) -->
+    <!-- ACCUEIL PRINCIPAL (Hero à deux colonnes avec photo) -->
     <main class="flex-grow-1">
-        <!-- Bannière avec texte -->
-        <header class="bg-light py-5 border-bottom">
-            <div class="container px-5 text-center">
-                <h1 class="fw-bolder text-primary">Sauvons la Chapelle de l'Ermitage</h1>
-                <p class="lead mb-4">Un patrimoine vieux de 400 ans, autrefois voué à disparaître, renaît aujourd'hui grâce à l'engagement citoyen à Sennecey-le-Grand.</p>
-                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                    <a class="btn btn-primary btn-lg px-4" href="restauration.html">Découvrir le projet</a>
-                    <a class="btn btn-outline-secondary btn-lg px-4" href="participer.html">Rejoindre les bénévoles</a>
+        <header class="hero-green py-5">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    
+                    <!-- Colonne de Gauche : Texte de présentation -->
+                    <div class="col-lg-6 text-lg-start text-center">
+                        <h1 class="fw-bolder text-success display-5 mb-3" style="color: #2d5a27 !important;">Chapelle de l'Ermitage</h1>
+                        <p class="lead mb-4 text-muted">Découvrez et participez à la renaissance d'un joyau historique du XVIIe siècle à Sennecey-le-Grand. Un patrimoine forestier unique préservé par des citoyens passionnés.</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-start justify-content-center">
+                            <a class="btn btn-green btn-lg px-4" href="participer.html">Rejoindre l'aventure</a>
+                            <a class="btn btn-outline-secondary btn-lg px-4" href="histoire.html">En savoir plus</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Colonne de Droite : Photo de la chapelle -->
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <!-- Remplace l'adresse ci-dessous par "img/chapelle-accueil.jpg" quand ta photo sera dans ton dossier -->
+                        <img src="img/chapelle_XXeme.jpg" 
+                             class="img-fluid rounded-4 shadow-lg border border-white border-4" 
+                             alt="La Chapelle de l'Ermitage au milieu des bois">
+                    </div>
+
                 </div>
             </div>
         </header>
 
-        <!-- Section de présentation rapide -->
+        <!-- SECTION DES ENCADRÉS INTERACTIFS -->
         <section class="py-5">
             <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2>Notre Mission</h2>
-                        <p class="lead mb-0">En 2023, la mairie de Sennecey a confié les clés du site à notre association. Notre but : l'étude, la mise en valeur, la restauration et l'animation de cet ancien ermitage du XVIIe siècle.</p>
+                <h2 class="text-center mb-5 fw-bold" style="color: #2d5a27;">Explorer le Projet</h2>
+                
+                <div class="row g-4 justify-content-center">
+                    
+                    <!-- Encadré 1 : L'Histoire -->
+                    <div class="col-md-5">
+                        <div class="card h-100 shadow-sm border-0 p-4 hover-zoom bg-white">
+                            <div class="card-body d-flex flex-column">
+                                <div class="fs-2 mb-3 text-success"><i class="bi bi-journal-bookmark-fill" style="color: #2d5a27;"></i></div>
+                                <h3 class="card-title h4 fw-bold">L'Histoire de la Chapelle</h3>
+                                <p class="card-text text-muted small flex-grow-1">Découvrez la vie des ermites depuis 1637, les mystères du lieu et sa première restauration au XIXe siècle.</p>
+                                <!-- Le lien stretched-link rend TOUTE la carte cliquable -->
+                                <a href="histoire.html" class="stretched-link btn btn-link p-0 text-success fw-bold text-decoration-none mt-3" style="color: #2d5a27 !important;">
+                                    Lire l'histoire <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Encadré 2 : Le Chantier -->
+                    <div class="col-md-5">
+                        <div class="card h-100 shadow-sm border-0 p-4 hover-zoom bg-white">
+                            <div class="card-body d-flex flex-column">
+                                <div class="fs-2 mb-3" style="color: #6d4c41;"><i class="bi bi-tools"></i></div>
+                                <h3 class="card-title h4 fw-bold">Le Chantier de Rénovation</h3>
+                                <p class="card-text text-muted small flex-grow-1">Suivez l'avancement des travaux étape par étape. Photos avant/après et techniques de maçonnerie.</p>
+                                <a href="restauration.html" class="stretched-link btn btn-link p-0 fw-bold text-decoration-none mt-3" style="color: #6d4c41 !important;">
+                                    Voir le chantier <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Encadré 3 : Les Partenaires -->
+                    <div class="col-md-5">
+                        <div class="card h-100 shadow-sm border-0 p-4 hover-zoom bg-white">
+                            <div class="card-body d-flex flex-column">
+                                <div class="fs-2 mb-3 text-secondary"><i class="bi bi-people-fill"></i></div>
+                                <h3 class="card-title h4 fw-bold">Nos Partenaires</h3>
+                                <p class="card-text text-muted small flex-grow-1">Découvrez l'ensemble des soutiens publics, associatifs et privés qui rendent cette aventure possible.</p>
+                                <a href="partenaires.html" class="stretched-link btn btn-link p-0 text-secondary fw-bold text-decoration-none mt-3">
+                                    Découvrir nos soutiens <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Encadré 4 : Nous Aider -->
+                    <div class="col-md-5">
+                        <div class="card h-100 shadow-sm border-0 p-4 hover-zoom bg-white">
+                            <div class="card-body d-flex flex-column">
+                                <div class="fs-2 mb-3 text-success"><i class="bi bi-calendar-check" style="color: #2d5a27;"></i></div>
+                                <h3 class="card-title h4 fw-bold">Participer & Nous Aider</h3>
+                                <p class="card-text text-muted small flex-grow-1">Inscrivez-vous aux prochaines journées citoyennes et restez informé des chantiers à venir.</p>
+                                <a href="participer.html" class="stretched-link btn btn-link p-0 text-success fw-bold text-decoration-none mt-3" style="color: #2d5a27 !important;">
+                                    Nous rejoindre <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -64,7 +136,7 @@
         </div>
     </footer>
 
-    <!-- Script Bootstrap (pour que le menu mobile fonctionne) -->
+    <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

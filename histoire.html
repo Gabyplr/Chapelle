@@ -6,10 +6,11 @@
     <title>L'Histoire - Chapelle de l'Ermitage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-    <!-- BARRE DE NAVIGATION (Histoire est actif) -->
+    <!-- BARRE DE NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Sennecey Patrimoine</a>
@@ -28,64 +29,124 @@
         </div>
     </nav>
 
-    <!-- ENTÊTE DE PAGE -->
-    <header class="bg-primary text-white py-5 text-center">
+    <!-- EN-TÊTE -->
+    <header class="hero-green py-5 text-center">
         <div class="container">
-            <h1 class="fw-bold">400 ans d'Histoire</h1>
-            <p class="lead mb-0">Découvrez le passé de la Chapelle Saint-Claude et de ses ermites.</p>
+            <h1 class="fw-bold text-success" style="color: #2d5a27 !important;">L'Histoire de l'Ermitage</h1>
+            <p class="lead mb-0 text-muted">Un voyage à travers quatre siècles de foi, de drames et de renaissance.</p>
         </div>
     </header>
 
-    <!-- SECTION HISTORIQUE -->
+    <!-- CORPS DE PAGE -->
     <main class="container my-5 flex-grow-1">
-        <div class="row g-5">
-            
-            <!-- Frise Chronologique -->
-            <div class="col-lg-8">
-                <h2 class="mb-4"><i class="bi bi-clock-history text-primary"></i> Les grandes dates de la chapelle</h2>
-                
-                <div class="card shadow-sm p-4 mb-4">
-                    <h4 class="text-primary">Fin XVIe / Début XVIIe siècle — La Fondation</h4>
-                    <p>La chapelle et son ermitage sont érigés sous le vocable de Saint-Claude par les seigneurs de Sennecey (probablement Roger-Charles de Bauffremont). Le site comprend alors la chapelle, deux chambres pour l'ermite, un petit jardin clos et une citerne pour vivre en autarcie.</p>
+        <div class="row g-5 justify-content-center">
+            <div class="col-lg-10 bg-white p-5 rounded shadow-sm">
+
+                <!-- 1. SITUATION ET ACCÈS -->
+                <section class="mb-5">
+                    <h2 class="text-success border-bottom pb-2" style="color: #2d5a27;"><i class="bi bi-geo-alt-fill"></i> Localisation & Accès</h2>
+                    <p class="mt-3">Niché dans un écrin forestier paisible, le site de l'Ermitage se situe entre la commune de Sennecey-le-Grand et l'église Saint-Martin de Laives. Pour y accéder, les visiteurs empruntent un chemin de montée offrant une transition douce entre la plaine et la quiétude boisée de la colline.</p>
+                    
+                    <!-- BLOC IMAGES : SAINT MARTIN & GOOGLE MAPS -->
+                    <div class="row g-4 my-4">
+                        
+                        <!-- Colonne de gauche : Photo de l'Église (Recadrée en 4x3 automatiquement) -->
+                        <div class="col-md-6">
+                            <div class="ratio ratio-4x3 rounded shadow-sm border overflow-hidden">
+                                <img src="img/saint-martin.jpg" style="object-fit: cover;" alt="Église Saint-Martin de Laives">
+                            </div>
+                            <p class="text-muted small text-center mt-2">L'église Saint-Martin de Laives, voisine du site</p>
+                        </div>
+                        
+                        <!-- Colonne de droite : Carte Google Maps (En 4x3) -->
+                        <div class="col-md-6">
+                            <div class="ratio ratio-4x3 rounded shadow-sm border overflow-hidden">
+                                <iframe 
+                                    src="https://maps.google.com/maps?q=L'Ermitage,%2071240%20Sennecey-le-Grand&t=k&z=17&ie=UTF8&iwloc=&output=embed" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <p class="text-muted small text-center mt-2">Carte satellite interactive - L'Ermitage au cœur de la forêt</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 2. LA FONDATION ET LA VIE DES ERMITES -->
+                <section class="mb-5">
+                    <h2 class="text-success border-bottom pb-2" style="color: #2d5a27;"><i class="bi bi-person-workspace"></i> Les origines et les premiers ermites (XVIIe siècle)</h2>
+                    <p class="mt-3">La chapelle de l'Ermitage a été fondée sous le patronage de Saint-Claude à la fin du XVIe siècle ou au tout début du XVIIe siècle par les seigneurs et barons de Sennecey, notamment la famille de Bauffremont. Conçu pour permettre une vie d'isolement et d'autarcie, le site comprenait à l'origine la chapelle reliée à deux chambres pour l'ermite, une cour fermée par des murs, un potager et une citerne pour recueillir les eaux de pluie.</p>
+                    
+                    <p>Le premier ermite connu, **Claude Tivollet**, y vécut durant 25 ans dans la prière et la contemplation avant de s'éteindre le 5 avril 1637. Respecté par toute la communauté, il fut inhumé au cœur de la nef de la chapelle.</p>
+
+                    <div class="row my-4 align-items-center">
+                        <div class="col-md-7">
+                            <p>Ses successeurs continuèrent d'inspirer une grande ferveur populaire dans toute la région. Parmi eux, **Jacques Mercier** se distingua en 1675 en faisant un don généreux de 1 500 livres aux Jésuites du collège de Chalon. La vénération pour ce lieu était telle qu'en 1705, le Pape Clément XI accorda officiellement des indulgences plénières aux pèlerins qui venaient s'y recueillir lors de la fête de la Saint-Claude.</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="img/chapelle_ancienne.jpg" class="img-fluid rounded shadow-sm" alt="Illustration historique de la chapelle">
+                            <p class="text-muted small text-center mt-2">La chapelle au temps des premiers ermites</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. UN DRAME TRAGIQUE ET L'ABANDON -->
+                <section class="mb-5">
+                    <h2 class="text-success border-bottom pb-2" style="color: #2d5a27;"><i class="bi bi-exclamation-triangle-fill"></i> Le drame des "Chauffeurs" et le déclin (XVIIIe siècle)</h2>
+                    <p class="mt-3">Au cours du XVIIIe siècle, la vie paisible de l'Ermitage fut brutalement interrompue par un fait tragique. Des bandits de grand chemin, surnommés les « chauffeurs », s'introduisirent dans la demeure du dernier ermite. Persuadés que le vieil homme cachait un trésor, ils le suspendirent dans sa cheminée et lui brûlèrent les pieds à petit feu pour le faire parler. L'ermite, qui n'avait pour seule richesse que sa foi, mourut dans d'atroces souffrances. Suite à ce drame, le site fut déserté et tomba lentement dans l'oubli et le délabrement.</p>
+                </section>
+
+                <!-- 4. LA SAGA DES PROPRIÉTAIRES ET LA PREMIÈRE RENAISSANCE -->
+                <section class="mb-5">
+                    <h2 class="text-success border-bottom pb-2" style="color: #2d5a27;"><i class="bi bi-hammer"></i> Rédemption et restauration (XIXe siècle)</h2>
+                    <p class="mt-3">Après la Révolution, le domaine passa entre les mains de plusieurs propriétaires privés. En 1834, les frères Charpy firent l'acquisition du bois et des ruines. C'est finalement en 1861 que **Charles Pierre Charpy**, ancien notaire et juge de paix de Sennecey, devint l'unique propriétaire.</p>
+                    
+                    <p>Sensibilisé à la sauvegarde de ce patrimoine, il lança en 1872 une restauration totale et d'envergure. La toiture et les plafonds furent entièrement rebâtis, une nouvelle croix de pierre fut érigée et un campanile surmonté d'une cloche fut installé pour dominer le chevet. Lors des travaux, une découverte majeure fut faite : un coffret contenant de précieuses reliques sacrées fut exhumé.</p>
+
+                    <div class="row my-4 align-items-center">
+                        <div class="col-md-5">
+                            <img src="img/chapelle_XXeme.jpg" class="img-fluid rounded shadow-sm" alt="La chapelle après sa restauration de 1873">
+                            <p class="text-muted small text-center mt-2">La chapelle restaurée à la fin du XIXe siècle</p>
+                        </div>
+                        <div class="col-md-7">
+                            <p>Le 5 juin 1873, la chapelle fut solennellement bénie devant une foule immense de plus de 1 200 personnes. Cet événement relança de nombreuses traditions locales, comme les processions de la Saint-Claude ou les rassemblements festifs de la jeunesse de Laives et de Sennecey le lundi de Pâques.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. DU DÉCLIN À L'ACTION CITOYENNE -->
+                <section class="mb-5">
+                    <h2 class="text-success border-bottom pb-2" style="color: #2d5a27;"><i class="bi bi-shield-shaded"></i> Le XXe siècle et le sauvetage moderne</h2>
+                    <p class="mt-3">En 1881, le domaine entra par héritage dans la famille Bouchard (négociants à Beaune) qui l'utilisa pour loger des gardiens et faire paître des troupeaux. Cependant, après la Seconde Guerre mondiale, le site fut à nouveau délaissé. Faute d'entretien, le bâtiment fut pillé, dépouillé de ses pierres de taille et envahi par une forêt dense.</p>
+                    
+                    <p>La commune de Sennecey-le-Grand racheta l'ensemble des parcelles en 1994 pour stopper la destruction du site. Finalement, c'est en **2023** qu'un accord décisif fut signé entre la mairie et l'association **Sennecey Patrimoine**. Cette union marque le point de départ des chantiers de bénévoles d'aujourd'hui, visant à redonner vie et sécurité à ce témoin unique de l'histoire locale.</p>
+                </section>
+
+                <!-- CRÉDITS ET AUTEUR -->
+                <div class="card bg-light border-0 p-4 mt-5">
+                    <div class="row align-items-center">
+                        <div class="col-auto text-success fs-1">
+                            <i class="bi bi-book-half"></i>
+                        </div>
+                        <div class="col">
+                            <h5 class="mb-1 text-dark fw-bold">Source historique</h5>
+                            <p class="text-muted small mb-0">Récit historique adapté et documenté d'après l'ouvrage de référence : <br>
+                            <span class="fst-italic">« Promenade à travers l'histoire du patrimoine de Sennecey »</span> (Édition 2023).</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="card shadow-sm p-4 mb-4">
-                    <h4 class="text-primary">5 avril 1637 — Claude Tivolet, le premier ermite</h4>
-                    <p>Après avoir vécu 25 ans dans l'isolement et la prière au sein de l'ermitage, le premier ermite, Claude Tivolet, s'éteint. Il est inhumé directement dans la nef de la chapelle, laissant une pierre tombale qui témoigne encore aujourd'hui de sa vie de dévotion.</p>
-                </div>
-
-                <div class="card shadow-sm p-4 mb-4">
-                    <h4 class="text-primary">1705 — Les Indulgences du Pape Clément XI</h4>
-                    <p>Preuve de la grande vénération dont font l'objet les ermites successifs, le Pape Clément XI accorde des indulgences plénières aux fidèles qui viennent se recueillir dans la chapelle le jour de la Saint-Claude.</p>
-                </div>
-
-                <div class="card shadow-sm p-4 mb-4">
-                    <h4 class="text-primary">1872 — La première grande restauration</h4>
-                    <p>Après des décennies de déclin et l'abandon du site suite à la Révolution, M. Charles Pierre Charpy, ancien notaire, rachète le site et décide de restaurer entièrement la chapelle vétuste. Une grande fête réunit plus de 1 200 personnes pour sa bénédiction le 5 juin 1873.</p>
-                </div>
             </div>
-
-            <!-- Encadré "Le saviez-vous ?" -->
-            <div class="col-lg-4">
-                <div class="card bg-dark text-white p-4 shadow-sm mb-4">
-                    <h3 class="h4 text-warning"><i class="bi bi-lightbulb"></i> Le saviez-vous ?</h3>
-                    <p class="small mt-3">Le dernier ermite du XVIIIe siècle a connu une fin tragique. Victime des "chauffeurs" (des bandits de grand chemin), il fut suspendu dans la cheminée de sa chambre et brûlé à petit feu pour lui faire avouer où se cachait son trésor... qu'il ne possédait pas.</p>
-                </div>
-
-                <div class="card p-4 shadow-sm bg-white">
-                    <h3 class="h4 text-primary"><i class="bi bi-book"></i> Description d'époque</h3>
-                    <p class="small text-muted font-italic">« Une nef éclairée au Nord par une fenêtre cintrée [...] Sur son flanc méridional s'appuie un bâtiment à deux chambres, demeure de l'ermite. Les chambres communiquent avec la chapelle... »</p>
-                    <span class="small text-end">— Léopold Niepce, historien (XIXe siècle)</span>
-                </div>
-            </div>
-
         </div>
     </main>
 
     <!-- PIED DE PAGE -->
     <footer class="py-4 bg-dark mt-auto text-white">
         <div class="container text-center">
-            <p class="m-0">© 2024 Sennecey Patrimoine - Projet d'engagement étudiant</p>
+            <p class="m-0">© 2026 Sennecey-le-Grand Patrimoine</p>
         </div>
     </footer>
 

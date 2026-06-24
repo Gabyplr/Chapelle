@@ -1,0 +1,54 @@
+/* Palette de couleurs personnalisée */
+:root {
+    --vert-foret: #2d5a27;      /* Vert principal pour les boutons/titres */
+    --vert-clair: #eef4ed;      /* Fond vert très clair moderne */
+    --marron-terre: #6d4c41;    /* Marron pour les accents */
+    --gris-fond: #f8f9fa;       /* Gris clair pour le fond général */
+    --noir-menu: #1a1a1a;       /* Noir doux pour les menus/footer */
+}
+
+/* Arrière-plan global */
+body {
+    background-color: var(--gris-fond);
+    color: #333333;
+}
+
+/* Boutons verts personnalisés */
+.btn-green {
+    background-color: var(--vert-foret);
+    color: white;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+.btn-green:hover {
+    background-color: #1e3f1a;
+    color: white;
+}
+
+/* Boutons marron personnalisés */
+.btn-brown {
+    background-color: var(--marron-terre);
+    color: white;
+    border: none;
+}
+.btn-brown:hover {
+    background-color: #4e362f;
+    color: white;
+}
+
+/* EFFET DE ZOOM SUR LES CARTES (Hover effect) */
+.hover-zoom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05); /* Grossit de 5% au survol */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important; /* Ajoute une ombre douce */
+    cursor: pointer;
+}
+
+/* En-tête (Hero) en vert clair moderne */
+.hero-green {
+    background-color: var(--vert-clair);
+    border-bottom: 2px solid #d3e2d0;
+}
